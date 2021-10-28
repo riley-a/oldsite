@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Joan Turing-Home</title>
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+
+    <!-- Jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jquery validation link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <!-- Angular js link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- js file link -->
+    <script src="js/scripts.js"> </script>
+  </head>
+  <body>
+    <div id="p_wrapper">
+      <header>
+        <a href="/" class="hometag">
+          <img src="img/homepic.png" alt="homebutton.png" id="homepic">
+        </a>
+          <!-- <a href="/"><button class="homebutton">Home</button></a> -->
+          <div class="nav_bar">
+            <a href="./pub.html">Publications</a>
+            <a href="./press.html">Press</a>
+            <a href="./research.html">Research & Interests</a>
+            <a href="./teaching.html">Teaching</a>
+            <a href="./group.html">Research Groups</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <a href="#" class="hometag"><img src="img/admin.png" onclick="admin_toggle()" class="sub_nav" id="adminpic"></a>
+          <!-- <a href="#"><button onclick="admin_toggle()"class="sub_nav">Admin</button></a> -->
+          <div class="sub_nav_content" id="admin_menu">
+            <a href="./bio-admin.html">Bio</a>
+            <a href="./news-admin.html">News</a>
+            <a href="./pub-admin.html">Publications</a>
+            <a href="./press-admin.html">Press</a>
+            <a href="./research-program-admin.html">Research</a>
+            <a href="./group-admin.html">Group</a>
+            <a href="./teaching-admin.html">Teaching</a>
+            <a href="./contact-admin.html">Contact</a>
+          </div>
+      </header>
+      <div class="section" id="body">
+        <div class="b_section" id="bio">
+          <h1 id="joan-name">Joan Turing</h1>
+          <hr>
+          <br>
+          <div class="column image">
+            <img src="img/image.png" alt="Joan Turing Profile Picture">
+          </div>
+          <div class="column bio">
+            <h2 id="ContactInfo">Bio</h2>
+            <hr id="bioLine">
+            <br>
+            <p>Faculty of Business and IT</p>
+            <p>PhD in Cryptography</p>
+            <p>Undergrad in Computer Science</p>
+            <p>Associate Professor in Cryptography, User Authentication
+            and Signals Intelligence</p>
+            <a href="https://www.ontariotechu.ca">Ontario Tech University</a>
+        </div>
+      </div>
+      <br>
+        <div class="b_section" id="news">
+          <h2>News</h2>
+          <hr>
+          <br>
+          <!-- random news that is linked to Turing -->
+          <div class="news-article">
+            <a href="https://interestingengineering.com/alan-turing-the-nazi-fighting-computer-genius-betrayed-by-his-country">
+              Alan Turing: The Nazi-Fighting Computer Genius Betrayed by His Country
+            </a>
+              <p class="news-date">October 15, 2021</p>
+              <p class="news-preview">The 20th century had no shortage of brilliant minds, but perhaps none had as significant an impact on our day-to-day lives as Alan Turing, considered by many as the founding father of modern computer science...</p>
+          </div>
+          <br>
+          <div class="news-article">
+            <a href="http://www.scholarpedia.org/article/Turing_machine">Turing Machine</a>
+              <p class="news-date">2009</p>
+              <p class="news-preview">A Turing machine refers to a hypothetical machine proposed by Alan M. Turing (1912--1954) in 1936 whose computations are intended to give an operational and formal definition of the intuitive notion of computability in the discrete domain...
+            </p>
+          </div>
+        <a href="more-news.html" id="more-news-button"><button>More News</button></a>
+        </div>
+      </div>
+      <div class="section" id="footer">
+        <p>© Riley A., Tommy D, and Marcus W., 2021</p>
+      </div>
+    </div>
+  </body>
+</html>

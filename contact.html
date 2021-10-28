@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Joan Turing-Contact Information</title>
+    <link rel="icon" href="img/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/main.css" />
+    <!-- Jquery link -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Jquery validation link -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+    <!-- Angular js link -->
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <!-- js file link -->
+    <script src="js/scripts.js"> </script>
+  </head>
+  <body>
+    <div id="p_wrapper">
+      <header>
+        <a href="/" class="hometag">
+          <img src="img/homepic.png" alt="homebutton.png" id="homepic">
+        </a>
+          <!-- <a href="/"><button class="homebutton">Home</button></a> -->
+          <div class="nav_bar">
+            <a href="./pub.html">Publications</a>
+            <a href="./press.html">Press</a>
+            <a href="./research.html">Research & Interests</a>
+            <a href="./teaching.html">Teaching</a>
+            <a href="./group.html">Research Groups</a>
+            <a href="./contact.html">Contact</a>
+          </div>
+          <a href="#" class="hometag"><img src="img/admin.png" onclick="admin_toggle()" class="sub_nav" id="adminpic"></a>
+          <!-- <a href="#"><button onclick="admin_toggle()"class="sub_nav">Admin</button></a> -->
+          <div class="sub_nav_content" id="admin_menu">
+            <a href="./bio-admin.html">Bio</a>
+            <a href="./news-admin.html">News</a>
+            <a href="./pub-admin.html">Publications</a>
+            <a href="./press-admin.html">Press</a>
+            <a href="./research-program-admin.html">Research</a>
+            <a href="./group-admin.html">Group</a>
+            <a href="./teaching-admin.html">Teaching</a>
+            <a href="./contact-admin.html">Contact</a>
+          </div>
+      </header>
+      <div class="contact-info section">
+        <!-- can be used for angularjs  -->
+        <div class="column contact" ng-app="" ng-init="personEmail='joan.turing@turingmachine.net'; phoneNumber='(555)555-5555'; mailAddress='221b Baker Street, London, England, NW1 6XE'">
+          <h1>Contact Information</h1>
+          <br><br>
+          <p>Email: <span ng-bind="personEmail"></span></p>
+          <br>
+          <p>Phone Number: <span ng-bind="phoneNumber"></span></p>
+          <br>
+          <p>Mail Address: <span ng-bind="mailAddress"></span></p>
+          <br>
+        </div>
+        <div class="column map" id="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.424670503865!2d-0.16074974912393702!3d51.5237703172278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761acf33628211%3A0x445d7677a88322e1!2s221B%20Baker%20St%2C%20London%20NW1%206XE%2C%20UK!5e0!3m2!1sen!2sca!4v1635109358568!5m2!1sen!2sca" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <div class="section" id="footer">
+        <p>© Riley A., Tommy D, and Marcus W., 2021</p>
+      </div>
+    </div>
+  </body>
+</html>
